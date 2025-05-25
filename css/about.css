@@ -1,0 +1,981 @@
+#about {
+    min-height: 85vh;
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    font-family: "Anek Latin", sans-serif;
+    font-weight: 600;
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 10%;
+    width: 70%;
+    margin: 5rem auto 0 auto;
+}
+
+.skills-heading,
+.information-heading {
+    color: #fff;
+    font-family: "Lora", sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.headings {
+    display: flex;
+    gap: 10px;
+}
+
+.skills,
+.information {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.skill {
+    font-size: 1.2rem;
+    font-family: "Anek Latin", sans-serif;
+    font-weight: 600;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 10px 20px;
+    max-width: fit-content;
+    border-radius: 5px;
+    cursor: default;
+    transition: var(--transition);
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.information-p {
+    color: #9aa1b6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.information-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-button {
+    font-size: 1.1rem;
+    font-family: "Anek Latin", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    max-width: fit-content;
+    border-radius: 5px;
+    transition: var(--transition)
+}
+
+.contact-button:hover {
+    background-color: var(--main-dark-color);
+}
+
+/* responsive */
+
+@media screen and (min-width: 3001px) and (max-width: 4000px) {
+    .about-heading {
+        font-size: 6.5rem;
+    }
+
+    .about-wrapper {
+        width: 80%;
+        margin: 7rem auto 0 auto;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 5.7rem;
+    }
+
+    .skills,
+    .information {
+        gap: 4rem;
+    }
+
+    .information-texts {
+        gap: 2rem;
+    }
+
+    .information-p {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .contact-button {
+        font-size: 2.5rem;
+        padding: 30px 40px;
+        border-radius: 10px;
+        /* 2x oboje */
+    }
+
+    .skills-box {
+        gap: 2rem;
+    }
+
+    .skill {
+        font-size: 2.5rem;
+        border: 4px solid var(--main-color);
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 2751px) and (max-width: 3000px) {
+    .about-heading {
+        font-size: 5rem;
+    }
+
+    .about-wrapper {
+        width: 75%;
+        margin: 6rem auto 0 auto;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 4rem;
+    }
+
+    .skills,
+    .information {
+        gap: 3.5rem;
+    }
+
+    .information-texts {
+        gap: 2rem;
+    }
+
+    .information-p {
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .contact-button {
+        font-size: 2rem;
+        padding: 25px 32px;
+        border-radius: 7px;
+    }
+
+    .skills-box {
+        gap: 1.7rem;
+    }
+
+    .skill {
+        font-size: 2rem;
+        border: 3px solid var(--main-color);
+        padding: 15px 30px;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (min-width: 2501px) and (max-width: 2750px) {
+    .about-heading {
+        font-size: 4.5rem;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 3.5rem;
+    }
+
+    .skills,
+    .information {
+        gap: 3rem;
+    }
+
+    .information-texts {
+        gap: 1.8rem;
+    }
+
+    .information-p {
+        font-size: 1.8rem;
+        line-height: 40px;
+    }
+
+    .contact-button {
+        font-size: 1.8rem;
+        padding: 25px 32px;
+        border-radius: 7px;
+    }
+
+    .skills-box {
+        gap: 1.7rem;
+    }
+
+    .skill {
+        font-size: 1.7rem;
+        border: 3px solid var(--main-color);
+        padding: 15px 30px;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (min-width: 2001px) and (max-width: 2500px) {
+    .about-heading {
+        font-size: 4rem;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 3rem;
+    }
+
+    .skills,
+    .information {
+        gap: 2rem;
+    }
+
+    .information-texts {
+        gap: 1.3rem;
+    }
+
+    .information-p {
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
+
+    .contact-button {
+        font-size: 1.5rem;
+        padding: 20px 26px;
+        border-radius: 6px;
+    }
+
+    .skills-box {
+        gap: 1.3rem;
+    }
+
+    .skill {
+        font-size: 1.3rem;
+        border: 3px solid var(--main-color);
+        padding: 13px 26px;
+    }
+}
+
+
+@media screen and (min-width: 1501px) and (max-width: 1650px) {
+    .about-wrapper {
+        width: 80%;
+        margin: 4rem auto 0 auto;
+    }
+
+    .skills,
+    .information {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .information-p {
+        font-size: .95rem;
+    }
+
+    .information-texts {
+        gap: .95rem;
+    }
+
+    .contact-button {
+        font-size: 1rem;
+        padding: 14px 18px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .skills,
+    .information {
+        gap: 1.6rem;
+    }
+
+    .skills {
+        width: 40%;
+    }
+
+    .information {
+        width: 60%;
+    }
+
+    .information-p {
+        font-size: .95rem;
+    }
+
+    .information-texts {
+        gap: .95rem;
+    }
+
+    .contact-button {
+        font-size: 1rem;
+        padding: 14px 18px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .skills,
+    .information {
+        gap: 1.6rem;
+    }
+
+    .skills {
+        width: 45%;
+    }
+
+    .information {
+        width: 55%;
+    }
+
+    .information-p {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .information-texts {
+        gap: .9rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .skills,
+    .information {
+        gap: 1.6rem;
+    }
+
+    .skills {
+        width: 45%;
+    }
+
+    .information {
+        width: 55%;
+    }
+
+    .information-p {
+        font-size: .95rem;
+        line-height: 20px;
+    }
+
+    .information-texts {
+        gap: .9rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .skills,
+    .information {
+        gap: 1.6rem;
+    }
+
+    .skills {
+        width: 40%;
+    }
+
+    .information {
+        width: 60%;
+    }
+
+    .information-p {
+        font-size: .95rem;
+        line-height: 20px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+/* tablets and phones*/
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .skills,
+    .information {
+        gap: 1.6rem;
+    }
+
+    .skills {
+        width: 80%;
+        margin: 0 auto 3rem auto;
+    }
+
+    .information {
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+
+    .information-p {
+        font-size: .95rem;
+        line-height: 20px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-heading {
+        margin-top: 3rem;
+    }
+
+    .skills,
+    .information {
+        gap: 1.6rem;
+    }
+
+    .skills {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+    }
+
+    .information {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    .information-p {
+        font-size: .95rem;
+        line-height: 20px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-heading {
+        margin-top: 3rem;
+    }
+
+    .skills,
+    .information {
+        gap: 1.6rem;
+    }
+
+    .skills {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+    }
+
+    .information {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    .information-p {
+        font-size: .95rem;
+        line-height: 20px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-heading {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 1.4rem;
+    }
+
+    .skills,
+    .information {
+        gap: 1rem;
+    }
+
+    .skills {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+    }
+
+    .information {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    .information-p {
+        font-size: .95rem;
+        line-height: 20px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 3.5rem auto 0 auto;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-heading {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 1.4rem;
+    }
+
+    .skills,
+    .information {
+        gap: 1rem;
+    }
+
+    .skills {
+        width: 95%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .information {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    .information-p {
+        font-size: .9rem;
+        line-height: 20px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .95rem;
+        padding: 12px 16px;
+    }
+
+    .skill {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 400px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 2.5rem auto 0 auto;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-heading {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 1.1rem;
+    }
+
+    .skills,
+    .information {
+        gap: .5rem;
+    }
+
+    .skills {
+        width: 95%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .information {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    .information-p {
+        font-size: .75rem;
+        line-height: 17px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .8rem;
+        padding: 8px 12px;
+    }
+
+    .skill {
+        font-size: .8rem;
+        padding: 7px 14px;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 300px) {
+    .about-wrapper {
+        width: 90%;
+        margin: 2.5rem auto 0 auto;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-heading {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .skills-heading,
+    .information-heading {
+        font-size: 1.1rem;
+    }
+
+    .skills,
+    .information {
+        gap: .5rem;
+    }
+
+    .skills {
+        width: 95%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .information {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    .information-p {
+        font-size: .75rem;
+        line-height: 17px;
+    }
+
+    .information-texts {
+        gap: 1rem;
+    }
+
+    .contact-button {
+        font-size: .8rem;
+        padding: 8px 12px;
+    }
+
+    .skill {
+        font-size: .8rem;
+        padding: 7px 14px;
+    }
+}
+
+/* height config */
+
+@media screen and (min-height: 1100px) and (max-height: 1300px) and (min-width: 1401px) and (max-width: 1700px) {
+
+    .skills-heading,
+    .information-heading {
+        font-size: 2.2rem;
+    }
+
+    .about-heading {
+        font-size: 3rem;
+    }
+
+    .information-texts {
+        gap: 1.3rem;
+    }
+
+    .information-p {
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
+
+    .contact-button {
+        font-size: 1.3rem;
+        padding: 18px 25px;
+    }
+
+    .skill {
+        font-size: 1.3rem;
+        border: 2px solid var(--main-color);
+        padding: 13px 26px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-height: 1301px) and (max-height: 2000px) and (min-width: 1401px) and (max-width: 1700px) {
+
+    .skills-heading,
+    .information-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-heading {
+        font-size: 3.4rem;
+    }
+
+    .information-texts {
+        gap: 1.5rem;
+    }
+
+    .information-p {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .contact-button {
+        font-size: 1.5rem;
+        padding: 18px 25px;
+    }
+
+    .skill {
+        font-size: 1.5rem;
+        border: 2px solid var(--main-color);
+        padding: 13px 26px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-height: 1301px) and (max-height: 1500px) and (min-width: 1200px) and (max-width: 1400px) {
+
+    .skills-heading,
+    .information-heading {
+        font-size: 2.4rem;
+    }
+
+    .about-heading {
+        font-size: 3.3rem;
+    }
+
+    .information-texts {
+        gap: 1.35rem;
+    }
+
+    .information-p {
+        font-size: 1.35rem;
+        line-height: 35px;
+    }
+
+    .contact-button {
+        font-size: 1.35rem;
+        padding: 18px 25px;
+    }
+
+    .skill {
+        font-size: 1.35rem;
+        border: 2px solid var(--main-color);
+        padding: 13px 26px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-height: 1200px) and (max-height: 1500px) and (min-width: 1000px) and (max-width: 1199px) {
+
+    .skills-heading,
+    .information-heading {
+        font-size: 2.2rem;
+    }
+
+    .about-heading {
+        font-size: 3rem;
+    }
+
+    .information-texts {
+        gap: 1.3rem;
+    }
+
+    .information-p {
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
+
+    .contact-button {
+        font-size: 1.3rem;
+        padding: 18px 25px;
+    }
+
+    .skill {
+        font-size: 1.3rem;
+        border: 2px solid var(--main-color);
+        padding: 13px 26px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-height: 1201px) and (max-height: 1500px) and (min-width: 800px) and (max-width: 999px) {
+
+    .skills-heading,
+    .information-heading {
+        font-size: 2.2rem;
+    }
+
+    .about-heading {
+        font-size: 3rem;
+    }
+
+    .information-texts {
+        gap: 1.3rem;
+    }
+
+    .information-p {
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
+
+    .contact-button {
+        font-size: 1.3rem;
+        padding: 18px 25px;
+    }
+
+    .skill {
+        font-size: 1.3rem;
+        border: 2px solid var(--main-color);
+        padding: 13px 26px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-height: 1001px) and (max-height: 1200px) and (min-width: 400px) and (max-width: 500px) {
+    #about {
+        min-height: fit-content;
+    }
+
+    .skills {
+        margin: 0 auto 3rem auto;
+    }
+}
