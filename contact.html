@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="./script/script.js" defer></script>
+    <script src="./script/contact.js" defer></script>
+    <script src="https://kit.fontawesome.com/6620d4ff92.js" crossorigin="anonymous" defer></script>
+    <title>Michal Novotný | Contact</title>
+</head>
+
+<body>
+    <div class="start-overlay"></div>
+    <div class="page-container hidden-none">
+        <div class="langButton" id="langButton" data-cz="Translate to EN" data-en="Přeložit do CZ">
+            Translate to EN
+        </div>
+        <header>
+            <i class="fa-solid fa-bars burger-icon"></i>
+            <i class="fa-solid fa-xmark close-icon hidden-none"></i>
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    Michal Novotný
+                </a>
+            </div>
+            <nav>
+                <ul class="header-ul">
+                    <li class="header-li"><a href="index.html" class="header-a" data-cz="Domů" data-en="Home">Domů</a>
+                    </li>
+                    <li class="header-li"><a href="about.html" class="header-a" data-cz="O mně" data-en="About">O
+                            mně</a>
+                    </li>
+                    <li class="header-li"><a href="work.html" class="header-a" data-cz="Projekty"
+                            data-en="Work">Projekty</a>
+                    </li>
+                    <li class="header-li"><a href="contact.html" class="header-a" data-cz="Kontakt"
+                            data-en="Contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-mobile hidden">
+                <nav>
+                    <ul class="header-ul">
+                        <li class="header-li"><a href="index.html" class="header-a" data-cz="Domů"
+                                data-en="Home">Domů</a>
+                        </li>
+                        <li class="header-li"><a href="about.html" class="header-a" data-cz="O mně" data-en="About">O
+                                mně</a>
+                        </li>
+                        <li class="header-li"><a href="work.html" class="header-a" data-cz="Projekty"
+                                data-en="Work">Projekty</a>
+                        </li>
+                        <li class="header-li"><a href="contact.html" class="header-a" data-cz="Kontakt"
+                                data-en="Contact">Kontakt</a></li>
+                        <div class="langButton mobile" id="langButton" data-cz="Translate to EN"
+                            data-en="Přeložit do CZ">
+                            Translate to EN
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="contact">
+            <h1 class="contact-heading" data-cz="Pojďme něco vytvořit" data-en="Contact me">Contact me</h1>
+            <div class="contact-wrapper">
+                <form action="https://formsubmit.co/emailsreceive1@gmail.com" method="POST" id="form" class="form"
+                    novalidate>
+                    <div class="form-control" id="form-target">
+                        <label class="required" for="name" data-cz="Vaše Jméno" data-en="Your Name">Your Name</label>
+                        <input type="text" id="name" name="name" autocomplete="off" placeholder="Name" data-cz="Jméno"
+                            data-en="Name" />
+                    </div>
+                    <div class="form-control">
+                        <label class="required" for="email">Email</label>
+                        <input type="email" placeholder="Email" name="email" id="email" autocomplete="off" />
+                    </div>
+                    <div class="form-control">
+                        <label class="required" for="message" data-cz="Zpráva" data-en="Message">Message</label>
+                        <textarea name="message" id="message" spellcheck="false" placeholder="Type your message..."
+                            data-cz="Napište svou zprávu..." data-en="Type your message..."></textarea>
+                    </div>
+                    <button type="submit" class="submit" data-cz="Odeslat" data-en="Send">Send</button>
+                </form>
+                <div class="contact-info">
+                    <div class="h2-wrapper">
+                        <h2 class="info-h2" data-cz="Spolupráce začíná" data-en="Get in">Get in</h2>
+                        <h2 class="info-h2 main" data-cz="Tady" data-en="Touch">Touch</h2>
+                    </div>
+                    <p class="info-p" data-cz="Pojďme spolupracovat!
+Máte návrh na projekt, zajímavý nápad na spolupráci, nebo jen krátký dotaz? Klidně využijte formulář vlevo – odpovím co nejdříve.
+Můžete mi taky napsat e-mail nebo se ozvat přes sociální sítě, které najdete pod tímto odstavcem.
+Budu se těšit na vaši zprávu!" data-en="Let's work together! If you have a project proposal, a potential partnership in
+                        mind, or just a quick question, feel
+                        free to use the form on the left for a speedy response. Alternatively, you can drop me an email
+                        or connect through my
+                        socials listed below this paragraph. Looking forward to hearing from you!">Let's work together!
+                        If you have a project proposal, a potential partnership in
+                        mind, or just a quick question, feel
+                        free to use the form on the left for a speedy response. Alternatively, you can drop me an email
+                        or connect through my
+                        socials listed below this paragraph. Looking forward to hearing from you!</p>
+                    <div class="socials">
+                        <div class="cbox github">
+                            <a href="https://github.com/Merdianos">
+                                <i class="fa-brands fa-github cicon github"></i>
+                            </a>
+                            <a class="cbox-a" href="https://github.com/Merdianos" data-cz="Můj Github"
+                                data-en="My Github">My Github</a>
+                        </div>
+                        <div class="cbox instagram">
+                            <a href="https://www.instagram.com/michal__novotny/"><i
+                                    class="fa-brands fa-instagram cicon instagram"></i></a>
+                            <a class="cbox-a" href="https://www.instagram.com/michal__novotny/" data-cz="Můj Instagram"
+                                data-en="My Instagram">My Instagram</a>
+                        </div>
+                        <div class="ebox">
+                            <i class="fa-solid fa-envelope cicon email"></i>
+                            <p class="ebox-p">novotnymichal337@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="upper-footer">
+                <div class="footer-socials">
+                    <div class="footer-socials-links">
+                        <a href="https://github.com/Merdianos">
+                            <i class="fa-brands fa-github cicon github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/michal__novotny/">
+                            <i class="fa-brands fa-instagram cicon instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <p class="copyright">©2025 | All rights reserved | Made by <a href="https://github.com/Merdianos">Michal
+                        Novotný</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
