@@ -5,6 +5,9 @@ const bar = document.querySelector(".burger-icon");
 const cancel = document.querySelector(".close-icon");
 const mHeader = document.querySelector(".header-mobile");
 let isFirstTime = true;
+if (!localStorage.getItem("lang")) {
+  localStorage.setItem("lang", "en");
+}
 if (langButton != null) {
   langButton.forEach((lang) => {
     lang.addEventListener("click", (e) => {
